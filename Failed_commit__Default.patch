@@ -1,0 +1,184 @@
+Index: web/WEB-INF/pages/index.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- web/WEB-INF/pages/index.jsp	(revision 5)
++++ web/WEB-INF/pages/index.jsp	(revision )
+@@ -6,11 +6,172 @@
+   To change this template use File | Settings | File Templates.
+ --%>
+ <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+-<html>
++<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
++<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+-    <title>这是首页</title>
++    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
++    <title>Zhejiang Aodi Machinery Manufacturing Co., Ltd. -Automatic Slack Adjusters, Brake Adjuster</title>
++    <meta name="description" content="Zhejiang Aodi Machinery Manufacturing Co., Ltd. specializes in automatic slack adjusters (also called brake adjuster) and has been the main supplier of the largest heavy vehicle plants in China for 8 year."/>
++    <meta name="keywords" content="Automatic Slack Adjusters, Brake Adjuster"/>
++    <link href="<%=request.getContextPath()%>/css/css.css" rel="stylesheet" type="text/css" />
++    <script language="javascript" src="<%=request.getContextPath()%>/js/pub.js"></script>
+ </head>
+-<body>
+-士大夫撒旦 水电费是
++
++<body id="nav_index">
++    <table width="1002" border="0" align="center" cellpadding="0" cellspacing="0">
++    <tr>
++        <td height="95">
++            <table width="100%" border="0" cellspacing="0" cellpadding="0">
++            <tr>
++                <td rowspan="2"><img src="<%=request.getContextPath()%>/images/new_logo.jpg" width="670" height="95" /></td>
++                <td>            <img src="<%=request.getContextPath()%>/images/top_language.gif" width="332" height="50" border="0" /></td>
++            </tr>
++            <tr>
++                <td><img src="<%=request.getContextPath()%>/images/top_tel.gif" width="332" height="45" /></td>
++            </tr>
++            </table>
++        </td>
++    </tr>
++    <tr>
++        <td height="48" background="images/menu_bg.gif"><div id="nav">
++            <ul>
++                <li><a id="index" href="index.asp.htm">HOME</a></li>
++                <li><a id="about" href="about_us.asp.htm" >ABOUT US</a></li>
++                <li><a id="products" href="products.asp.htm" >PRODUCTS</a></li>
++                <li><a id="honors" href="honors.asp.htm" >HONORS</a></li>
++                <li><a id="equipment" href="equipment.asp.htm" >EQUIPMENT</a></li>
++                <li><a id="news" href="news_center.asp.htm" >NEWS CENTER</a></li>
++                <li><a id="feedback" href="feedback.asp.htm" >FEEDBACK</a></li>
++                <li><a id="contact" href="contact_us.asp.htm" >CONTACT US</a></li>
++            </ul>
++        </div></td>
++    </tr>
++    <tr>
++        <td height="40" background="images/search_bg.gif"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
++            <form id="srh_form" name="form1" method="post">
++                <tr>
++                    <td width="58%" class="searchwhite">Welcome to <strong><span class="en">www.cn-aodi.com</span></strong></td>
++                    <td width="40%"><div align="right"><span class="searchwhite"><strong>Search:</strong></span>
++                        <input name="srh" id="srh" type="text" class="search" value="" size="35"/></div></td>
++                    <td width="2%"><input type="image" src="images/search.gif" width="60" height="30" /></td>
++                </tr></form>
++        </table>
++            <script language="javascript">
++                chk_search("cn", "srh_form", "srh", "products.asp.htm"/*tpa=http://www.cn-aodi.com/products.asp*/, "");
++            </script></td>
++    </tr>
++</table><map name="Map" id="Map">
++    <area shape="rect" coords="122,3,212,45" href="cn_about_us.asp.htm" /><area shape="rect" coords="213,3,318,44" href="about_us.asp.htm" />
++</map>
++<table width="1002" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:7px;">
++    <tr>
++        <td>
++            <script type="text/javascript">
++                var swf_width=1002
++                var swf_height=320
++                var files  ='images/index_banner1.jpg|images/index_banner2.jpg|images/index_banner3.jpg';
++                var links = '';
++                var texts = '';
++            </script>
++        </td>
++    </tr>
++</table>
++<table width="1002" border="0" align="center" cellpadding="0" cellspacing="0">
++    <tr>
++        <td colspan="6"><img src="images/featured_top.gif" width="1002" height="24" /></td>
++    </tr>
++    <tr>
++        <td width="167" height="121" valign="top" background="images/featured_middlebg.gif" style="border-right:#8a9192 1px solid;"><div align="center"><a href="products.asp.htm"><img src="images/featured_p1.jpg" width="102" height="100" border="0" /></a><br />
++            <strong>72538 DAF</strong></div></td>
++        <td width="167" valign="top" background="images/featured_middlebg.gif" style="border-right:#8a9192 1px solid;"><div align="center"><a href="products.asp.htm"><img src="images/featured_p2.jpg" width="87" height="100" border="0" /></a><br />
++            <strong>79210 MAN</strong></div></td>
++        <td width="167" valign="top" background="images/featured_middlebg.gif" style="border-right:#8a9192 1px solid;"><div align="center"><a href="products.asp.htm"><img src="images/featured_p3.jpg" width="116" height="100" border="0" /></a><br />
++            <strong>79443 Scania</strong></div></td>
++        <td width="167" valign="top" background="images/featured_middlebg.gif" style="border-right:#8a9192 1px solid;"><div align="center"><a href="products.asp.htm"><img src="images/featured_p4.jpg" width="133" height="100" border="0" /></a><br />
++            <strong>80022 SAF</strong></div></td>
++        <td width="167" valign="top" background="images/featured_middlebg.gif" style="border-right:#8a9192 1px solid;"><div align="center"><a href="products.asp.htm"><img src="images/featured_p5.jpg" width="114" height="100" border="0" /></a><br />
++            <strong>80191 Hyundai</strong></div></td>
++        <td width="167" valign="top" background="images/featured_middlebg.gif"><div align="center"><a href="products.asp.htm"><img src="images/featured_p6.jpg" width="111" height="100" border="0" /></a><br />
++            <strong>Flange plate</strong></div></td>
++    </tr>
++    <tr>
++        <td colspan="6"><img src="images/featured_down.gif" width="1002" height="14" /></td>
++    </tr>
++</table>
++<table width="1002" border="0" align="center" cellpadding="0" cellspacing="0" class="contentbg">
++    <tr>
++        <td><table width="962" border="0" align="center" cellpadding="0" cellspacing="0">
++            <tr>
++                <td width="250" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
++                    <tr>
++                        <td><img src="images/index_content_bt1.gif" width="116" height="20" /></td>
++                    </tr>
++                    <tr>
++                        <td class="h19" style="padding-top:8px;">Zhejiang Aodi Machinery Manufacturing Co., Ltd. specializes in automatic slack adjusters (also called brake adjuster) and has been the main supplier of the largest heavy vehicle plants in China for 8 year......<br />
++                            <img src="images/index_factory.jpg" width="239" height="98" style="border:#afafaf 1px solid; margin-top:5px;"/></td>
++                    </tr>
++                </table></td>
++                <td width="45">&nbsp;</td>
++                <td width="365" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
++                    <tr>
++                        <td><img src="images/index_content_bt2.gif" width="139" height="20" /></td>
++                    </tr>
++                    <tr>
++                        <td style="padding-top:8px;"><div class="news">
++                            <ul>
++                                <li><a href="news_show.asp-id=94.htm">2012 Autumn Canton Fair</a> <img src="images/new.gif" width="23" height="11" /></li>
++
++                                <li><a href="news_show.asp-id=128.htm">2012 Autumn Canton Fair</a></li>
++
++
++
++                            </ul>
++                        </div></td>
++                    </tr>
++                </table></td>
++                <td width="45">&nbsp;</td>
++                <td width="257" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="contactmap">
++                    <tr>
++                        <td><img src="images/index_content_bt3.gif" width="119" height="20" /></td>
++                    </tr>
++                    <tr>
++                        <td height="200" valign="top" style="padding-top:8px;"><ul>
++                            <li>Add: Automobile &amp; Motorcycle Industrial Zone, Yuhuan, Zhejiang, China<br />
++                                Tel: +86-576-87286058 87286157</li>
++                            <li>Fax: +86-576-87286087</li>
++                        </ul>
++                            <ul>
++                                <li>URL: www.cn-aodi.com</li>
++                                <li>E-mail: <a href="mailto:aodi@zjaodi.com"><span class="redlink">aodi@zjaodi.com</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:info@tzanjie.com"><span class="redlink">info@tzanjie.com</span></a><br />
++                                </li>
++                            </ul>
++                        </td>
++                    </tr>
++                </table></td>
++            </tr>
++        </table></td>
++    </tr>
++</table>
++<table width="100%" border="0" cellspacing="0" cellpadding="0">
++    <tr>
++        <td background="images/foot_line.gif"><img src="images/foot_line.gif" width="1" height="2" /></td>
++    </tr>
++    <tr>
++        <td><table width="960" border="0" align="center" cellpadding="0" cellspacing="0" style="padding:6px 0px;">
++            <tr>
++                <td width="621"><a href="index.asp.htm">Home</a> | <a href="about_us.asp.htm">About Us</a> | <a href="products.asp.htm">Products</a> | <a href="honors.asp.htm">Honors</a> | <a href="news_center.asp.htm">News Center</a> | <a href="feedback.asp.htm">Feedback</a> | <a href="contact_us.asp.htm">Contact Us</a><br />
++                    Copyright&copy;2012-2013 <strong>Zhejiang Aodi Machinery Manufacturing Co., Ltd. </strong><script type="text/javascript">
++                        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
++                        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F430c3ad1cff7ca676e179fd74ee457fd' type='text/javascript'%3E%3C/script%3E"));
++                    </script>    &nbsp;<script src="../s13.cnzz.com/stat.php-id=4867149&web_id=4867149&show=pic1" language="JavaScript"></script>
++                </td>
++                <td width="276"><div align="right">Designed &amp; Supported by <a href="javascript:if(confirm('http://www.haibo.net/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.haibo.net/'" target="_blank">Haibo Network Inc.</a></div></td>
++            </tr>
++        </table></td>
++    </tr>
++</table>
++<div align="center"><script language='javaScript' src="../zjnet.zjaic.gov.cn/bsjs/331021/33102100003585.js" tppabs="http://zjnet.zjaic.gov.cn/bsjs/331021/33102100003585.js"></script></div>
+ </body>
+ </html>
++
++
